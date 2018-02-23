@@ -1,0 +1,26 @@
+.marquee-box{
+  width: inherit;
+  height: 30px;
+  overflow:hidden;
+}
+.marquee {
+  font-family: helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  color: #E02989;
+  position: relative;
+  -webkit-animation-name: marquee;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-name: marquee;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+@keyframes marquee {
+  0% {left: 100%; top: 0px;}
+  100% {left: -100%; top: 0px;}
+}
